@@ -6,30 +6,30 @@ public class Function {
     //     return;
     // }
 
-    public static boolean IsPrime(int n){
-        if(n==2){
-            return true;
-        }
-        boolean isprime = true;
-        for(int i = 2 ; i <= Math.sqrt(n)  ;i++){
-            if(n%i == 0){
-                isprime= false;
-                break;
-            }
-        }
-        return isprime;
-    }
-    public static void primeInrange(int n){
-        for(int i = 2 ;i <= n ;i++){
-            if(IsPrime(i)== true){
-                System.out.println(i);
-            }
-            else{
-                continue;
-            }
-         }
+    // public static boolean IsPrime(int n){
+    //     if(n==2){
+    //         return true;
+    //     }
+    //     boolean isprime = true;
+    //     for(int i = 2 ; i <= Math.sqrt(n)  ;i++){
+    //         if(n%i == 0){
+    //             isprime= false;
+    //             break;
+    //         }
+    //     }
+    //     return isprime;
+    // }
+    // public static void primeInrange(int n){
+    //     for(int i = 2 ;i <= n ;i++){
+    //         if(IsPrime(i)== true){
+    //             System.out.println(i);
+    //         }
+    //         else{
+    //             continue;
+    //         }
+    //      }
          
-    }
+    // }
     // public static int sum(int a , int b ){
     //     return a+b;
     // }
@@ -67,6 +67,32 @@ public class Function {
     //     int sum = a+b;
     //     return sum;
     // }
+    // public static void BinaryToDecimal(int binNum ){
+    //     int myNum = binNum;
+    //     int pow = 0;
+    //     int decNum = 0;
+         
+    //     while(binNum > 0){
+    //          int lastdigit = binNum % 10;
+    //          decNum = decNum + (lastdigit*(int)Math.pow(2 , pow));
+    //          pow++;
+    //          binNum = binNum/10;
+    //     }
+    //     System.out.println("Decimal of "+myNum +" = "+ decNum);
+    // }
+
+    public static void decTobin(int n){
+        int myNum = n;
+        int pow = 0;
+        int binNum = 0;
+        while(n>0){
+            int rem = n % 2 ;
+            binNum = binNum + (rem*(int)Math.pow(10 , pow));
+            pow++;
+            n = n/2;
+        }
+        System.out.println("The binary of "+myNum +" = "+binNum );
+    }
     public static void main(String args[]){
       
     Scanner sc = new Scanner(System.in);
@@ -95,8 +121,13 @@ public class Function {
     // System.out.println("Enter the number to check the number " );
     // int n = sc.nextInt();
     // System.out.println(IsPrime(n));
-    System.out.println("Enter the number till where you want to find the prime :");
-     int n = sc.nextInt();
-     primeInrange(n);
+    // System.out.println("Enter the number till where you want to find the prime :");
+    //  int n = sc.nextInt();
+    //  primeInrange(n);
+   // BinaryToDecimal(n);
+
+   System.out.println("Enter the decimal  to be converted : ");
+   int n = sc.nextInt();
+   decTobin(n);
     }
 }
