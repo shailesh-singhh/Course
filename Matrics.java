@@ -50,11 +50,50 @@ public class Matrics {
       }
       System.out.println();
     }
+    public static int digonalSun(int matrics[][]){
+        int sum = 0;
+        // for(int i = 0 ; i <matrics.length ; i++){
+        //     for(int j = 0 ; j < matrics[0].length ; j++){
+        //         if(i == j){
+        //             sum += matrics[i][j];                  BRUTEFORCE CODE
+        //         }
+        //        else if(i+j == matrics.length-1){
+        //         sum += matrics[i][j];
+        //        }
+        //     }
+        // }
+        for(int i = 0 ; i<matrics.length; i++){
+            sum += matrics[i][i];
+            if(i != matrics.length-1-i){
+                sum += matrics[i][matrics.length-i-1]; 
+            }
+        }
+        return sum;
+    }
+    public static boolean stairCaseSearch(int matrics[][], int key){
+        int row = 0; int col = matrics.length-1;
+        while(row < matrics.length && col >= 0){
+            if(matrics[row][col] == key){
+                System.out.println("Found key at ("+row +","+col +")");
+                return true;
+            }
+
+            else if(key < matrics[row][col]){
+                col--;
+            }
+            else{
+                row++;
+            }
+        }
+        System.out.println("Key not found !");
+        return false;
+    }
     public static void main(String args[]){
-        int matrics [][] = {{1,2,3,4},
-                            {5,6,7,8},
-                            {9,10,11,12},
-                            {13,14,15,16}};
+        int matrics [][] = {{10,20,30,40},
+                            {15,25,35,45},
+                            {27,29,37,48},
+                            {32,33,39,50}};
+                            int key = 33;
         // Scanner sc = new Scanner(System.in);
         // System.out.println("Enter the elements of the matrics ");
         // int n = 3;
@@ -77,7 +116,9 @@ public class Matrics {
         // Search(mat rics, key);
           
 
-        spiralMatrix(matrics);
+        // spiralMatrix(matrics);
+        // System.out.println(digonalSun(matrics));
+        stairCaseSearch(matrics, key);
 
     }
 }
