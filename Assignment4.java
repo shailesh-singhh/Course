@@ -25,7 +25,7 @@ public class Assignment4 {
     public static void Transpose(int arr[][]){
         
     }
-    public static void main(String args[]){
+    public static void main(Strings args[]){
             int arr[][]={{1,4,9},{11,4,3}};
             // CountSevens(arr);
             Sum(arr);

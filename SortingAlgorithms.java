@@ -45,7 +45,7 @@ public class SortingAlgorithms {
             arr[prev+1] = curr;
           }
     }
-    public static void main(String args[]){
+    public static void main(Strings args[]){
         Integer arr[] = {5,4,1,3,2};
         //insertionSort(arr);
 

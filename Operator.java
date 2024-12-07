@@ -1,6 +1,6 @@
 import java.util.*;
 public class Operator {
-    public static void main(String args[]){
+    public static void main(Strings args[]){
         // int a = 20;
         // int b = 4;
         // int sum = a+b;

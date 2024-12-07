@@ -1,7 +1,7 @@
 import java.util.*;
 public class Typecasting {
   
-    public static void main(String args[]){
+    public static void main(Strings args[]){
         // char ch = 'a';
         // int number = ch;
         // System.out.println(number);

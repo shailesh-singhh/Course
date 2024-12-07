@@ -37,7 +37,7 @@ for(int j = i+1; j<numbers.length ; j++){
                  }
                  System.out.println("Total sub arrays : "+ts);
   }
-    public static void main(String args[]){
+    public static void main(Strings args[]){
       int numbers[]={2, 4, 6, 8, 10};
       // Reverse(numbers);
       // for(int i = 0; i<numbers.length ;i++){

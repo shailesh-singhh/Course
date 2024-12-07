@@ -16,7 +16,7 @@ public class ArrayAssinment {
         System.out.println(istrue);
        
     }
-    public static void main(String args[]){
+    public static void main(Strings args[]){
         int arr[]= {1,2,3,4};
         Distinct(arr);
     }

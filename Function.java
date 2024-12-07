@@ -93,7 +93,7 @@ public class Function {
         }
         System.out.println("The binary of "+myNum +" = "+binNum );
     }
-    public static void main(String args[]){
+    public static void main(Strings args[]){
       
     Scanner sc = new Scanner(System.in);
     // System.out.println("Enter the Numbers to find the binomial Expression : ");

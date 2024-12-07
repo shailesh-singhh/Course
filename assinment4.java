@@ -40,7 +40,7 @@ public class assinment4 {
     //     }
     //     System.out.println("The sum of the digits is : "+sum);
     // }
-    public static void main(String args[]){
+    public static void main(Strings args[]){
  Scanner sc = new Scanner(System.in);
  System.out.println("Enter the numbers to test even or not : ");
  int n = sc.nextInt();

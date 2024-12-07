@@ -1,6 +1,6 @@
 import java.util.*;
 public class Nested {
-    public static void main(String args[]){
+    public static void main(Strings args[]){
           char ch = 'A';
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the height of star :");

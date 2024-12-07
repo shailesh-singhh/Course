@@ -28,7 +28,7 @@ public class OpArray {
         }
         return -1;
     }
-    public static void main(String args[]){
+    public static void main(Strings args[]){
     //     int number [] = {1,2,3,6,4,5};
     //   int res = LarNum(number);
     //   System.out.println("The largest of the array is : "+res);

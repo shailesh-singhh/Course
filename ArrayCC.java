@@ -23,7 +23,7 @@ public class ArrayCC {
         }
      return larg;
     }
-    public static void main(String args[]){
+    public static void main(Strings args[]){
     //     int marks [] = new int[50];
     //     // int num[] ={2,4,6,6,7};''
     //     Scanner sc = new Scanner(System.in);
