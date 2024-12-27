@@ -60,7 +60,7 @@ public class BitwiseOperation {
     }
     public static int countSetBits(int n ){
         int count = 0;
-        while(n>0){
+        while(n>0){                                            //I am adding a comment
             if((n & 1) != 0){
                 count++;
             }
@@ -77,7 +77,7 @@ public class BitwiseOperation {
             a = a*a;
             n = n>>1;
         }
-        System.out.println(ans); 
+        System.out.println(ans);  
     }
     public static void main(String args[]){
         //  System.out.println((6>>2 ));
