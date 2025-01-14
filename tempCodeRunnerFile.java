@@ -1,2 +1,1 @@
-import java.util.*;
-public class Strings {
+ System.out.println(1+" ");
