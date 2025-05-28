@@ -16,7 +16,7 @@ public class Revese {
     public static void main(String args[]){
            int arr[]={1,2,3,4,5,6};
            int n = arr.length;
-           int k = 10e0;
+           int k = 100;
            if(k>n){
             k= k%n;
            }
